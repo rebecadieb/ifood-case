@@ -217,8 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-data/raw/
-data/processed/
+
 venv/
 .venv/
 __pycache__/
@@ -230,3 +229,11 @@ __pycache__/
 venv/
 .venv/
 venv_pyspark/
+
+# datasets
+data/raw/*
+data/processed/*
+
+# keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
