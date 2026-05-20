@@ -27,8 +27,9 @@ Construir um modelo capaz de prever a probabilidade de conversão de ofertas pro
 │   ├── 01_data_processing.ipynb
 │   ├── 02_exploratory_analysis.ipynb
 │   └── 03_modeling.ipynb
-│
+├── presentation
 ├── requirements.txt
+├── LICENSE
 ├── README.md
 └── .gitignore
 ```
@@ -122,7 +123,23 @@ jupyter lab
 Notebook:
 
 ```text
-01_eda.ipynb
+01_data_processing.ipynb
+```
+
+Contém:
+* processamento das tabelas via pyspark;
+* ajuste em variáveis;
+* criação da base analítica com a jornada do cliente e informações de ofertas;
+
+
+---
+
+## 2. Feature Engineering
+
+Notebook:
+
+```text
+02_exploratory_analysis.ipynb
 ```
 
 Contém:
@@ -132,24 +149,6 @@ Contém:
 * correlação;
 * visualizações;
 * análise de conversão.
-
----
-
-## 2. Feature Engineering
-
-Notebook:
-
-```text
-02_feature_engineering.ipynb
-```
-
-Contém:
-
-* construção da base final;
-* features históricas;
-* engenharia temporal;
-* agregações por cliente;
-* construção da jornada promocional.
 
 ---
 
@@ -220,3 +219,5 @@ O modelo identificou forte relação entre conversão e:
 * O problema possui forte componente temporal e comportamental.
 
 ---
+
+Autora: Rebeca Dieb
